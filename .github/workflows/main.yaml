@@ -16,6 +16,7 @@ jobs:
     steps:
       - name: "Test workflow"
         run: echo  ${{ matrix.name }}
+      - uses: actions/checkout@v3
       - name: "Test composite action"
         with:
           name: ${{ matrix.name }}
