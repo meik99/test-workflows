@@ -8,5 +8,7 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: ./.github/.workflows/script/run.sh "${{ inputs.name }}"
+    - run: |
+        ls -lah
+        ./run.sh "${{ inputs.name }}"
       shell: bash
