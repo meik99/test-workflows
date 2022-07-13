@@ -22,15 +22,3 @@ jobs:
         with:
           name: ${{ matrix.name }}
         uses: ./.github/workflows/echo.yaml
-
-  reusable-print:
-    strategy:
-      matrix:
-        name:
-          - "Test 1"
-          - "Test 2"
-          - "Test 3"
-          - "Test 4"
-    uses: ./.github/workflows/echo.yaml
-    with:
-      name: ${{ matrix.name }}
