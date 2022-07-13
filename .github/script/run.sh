@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-name=$"{1}"
+name="${1}"
 
 echo "Hello to "
 echo "${name}"
