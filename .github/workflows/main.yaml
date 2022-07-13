@@ -21,3 +21,7 @@ jobs:
         with:
           name: ${{ matrix.name }}
         uses: ./.github/echo/
+      - name: "Test complex composite action"
+        with:
+          name: ${{ matrix.name }}
+        uses: ./.github/script/

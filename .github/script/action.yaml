@@ -1,0 +1,12 @@
+name: 'Script'
+description: 'Calls a script'
+inputs:
+  name:
+    required: true
+    description: "Name to echo"
+    default: ""
+runs:
+  using: "composite"
+  steps:
+    - run: ./.github/.workflows/script/run.sh "${{ inputs.name }}"
+      shell: bash
