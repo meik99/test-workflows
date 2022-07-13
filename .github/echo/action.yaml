@@ -1,0 +1,12 @@
+name: 'Echo'
+description: 'echos a name'
+inputs:
+  name:
+    required: true
+    description: "Name to echo"
+    default: ""
+runs:
+  using: "composite"
+  steps:
+    - run: echo "${{ inputs.name }}"
+      shell: bash
