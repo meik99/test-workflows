@@ -15,6 +15,8 @@ jobs:
           - "Test 4"
     steps:
       - name: "Test workflow"
+        run: echo  ${{ matrix.name }}
+      - name: "Test reusable workflow"
         with:
           name: ${{ matrix.name }}
-        run: echo "${name}"
+        uses: ./.github/workflows/echo.yaml
