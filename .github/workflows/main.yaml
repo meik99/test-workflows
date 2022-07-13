@@ -1,0 +1,9 @@
+on:
+  workflow_call: {}
+
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Test workflow"
+        run: echo "test"
