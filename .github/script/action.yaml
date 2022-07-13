@@ -10,5 +10,5 @@ runs:
   steps:
     - run: |
         ls -lah
-        ./run.sh "${{ inputs.name }}"
+        ./.github/script/run.sh "${{ inputs.name }}"
       shell: bash
