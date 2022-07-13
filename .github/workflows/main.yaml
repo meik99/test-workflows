@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: "Test workflow"
         run: echo  ${{ matrix.name }}
+      - name: "Checkout repository"
+        uses: actions/checkout@v3
       - name: "Test reusable workflow"
         with:
           name: ${{ matrix.name }}
