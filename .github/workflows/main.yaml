@@ -25,3 +25,7 @@ jobs:
         with:
           name: ${{ matrix.name }}
         uses: ./.github/script/
+      - name: "Test node composite action"
+        with:
+          name: ${{ matrix.name }}
+        uses: ./.github/node/

@@ -1,0 +1,10 @@
+name: 'Node action'
+description: 'Does javascript stuff'
+inputs:
+  name:
+    required: true
+    description: "Name to do stuff with"
+    default: ""
+runs:
+  using: node16
+  main: "index.js"
